@@ -1,5 +1,8 @@
 .header{
   margin-top: 30px;
+  @media (max-width:768px) {
+    background-color: rgba(39, 38, 42, 0.5);
+  }
 }
 .header__head{
   display: flex;
@@ -12,10 +15,14 @@
     & .menu_navigation{
       display: flex;
       justify-content: space-between;
+      align-items: center;
         & .navigation-item{
           margin: 0 25px 0 0px;
           @include montserrat700;
           color: #8D81AC;
+          &:hover{
+          color: #ffffff;
+        }
         }
     }
 }
@@ -23,6 +30,9 @@
   @include lato700;
   text-transform: uppercase;
   color: #8D81AC;
+    &:hover{
+    color: #ffffff;
+  }
 }
 .menu-button{
   border-radius: 40px;
@@ -30,6 +40,10 @@
   background-color: #8D81AC;
   padding: 10px 20px;
   border: none;
-  @include mo
+  @include montserrat700;
+    &:hover{
+      background-color: #fff;
+      color: #8D81AC;
+    }
 }
 

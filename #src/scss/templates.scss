@@ -1,6 +1,10 @@
 .content{
-  @media (min-width: 1200px ) {
+  @media (max-width: 1080px ) {
     max-width: 1020px;
+    margin: 0 auto;
+  }
+  @media (max-width: 778px) {
+    max-width: 728px;
     margin: 0 auto;
   }
 }

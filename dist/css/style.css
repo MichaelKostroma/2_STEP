@@ -176,6 +176,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .head__menu .menu_navigation .navigation-item {
@@ -185,11 +188,19 @@ body {
   color: #8D81AC;
 }
 
+.head__menu .menu_navigation .navigation-item:hover {
+  color: #ffffff;
+}
+
 .logo-main {
   font-family: "lato:ital";
   font-weight: 700;
   text-transform: uppercase;
   color: #8D81AC;
+}
+
+.logo-main:hover {
+  color: #ffffff;
 }
 
 .menu-button {
@@ -198,9 +209,16 @@ body {
   background-color: #8D81AC;
   padding: 10px 20px;
   border: none;
+  font-family: "Montserrat";
+  font-weight: 700;
 }
 
-@media (min-width: 1200px) {
+.menu-button:hover {
+  background-color: #fff;
+  color: #8D81AC;
+}
+
+@media (max-width: 1080px) {
   .content {
     max-width: 1020px;
     margin: 0 auto;
@@ -209,5 +227,23 @@ body {
   .content {
     max-width: 1020px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 778px) {
+  .content {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+
+  .content {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: rgba(39, 38, 42, 0.5);
   }
 }
