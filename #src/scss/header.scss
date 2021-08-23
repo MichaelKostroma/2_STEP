@@ -1,0 +1,35 @@
+.header{
+  margin-top: 30px;
+}
+.header__head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head__menu{
+  display: flex;
+  justify-content: space-between;
+    & .menu_navigation{
+      display: flex;
+      justify-content: space-between;
+        & .navigation-item{
+          margin: 0 25px 0 0px;
+          @include montserrat700;
+          color: #8D81AC;
+        }
+    }
+}
+.logo-main{
+  @include lato700;
+  text-transform: uppercase;
+  color: #8D81AC;
+}
+.menu-button{
+  border-radius: 40px;
+  color: #fff;
+  background-color: #8D81AC;
+  padding: 10px 20px;
+  border: none;
+  @include mo
+}
+

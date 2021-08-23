@@ -1,5 +1,22 @@
-body{
-  background-color: red;
+.content{
+  @media (min-width: 1200px ) {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
 }
-
-@import "style";
+@mixin lato700{
+  font-family: "lato:ital";
+  font-weight: 700;
+}
+@mixin lato400{
+  font-family: "lato";
+  font-weight: 400;
+}
+@mixin montserrat400{
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+@mixin montserrat700{
+  font-family: "Montserrat";
+  font-weight: 700;
+}
