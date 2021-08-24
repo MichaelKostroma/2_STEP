@@ -1,4 +1,7 @@
 @import "templates";
+//body{
+//  background-image: url(../img/Logo1.png);
+//}
 .header{
   margin-top: 30px;
   @media (max-width:$withTablet) {
@@ -7,16 +10,26 @@
 }
 .header__head{
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
+  //flex-wrap: wrap;
 }
+.head__logo{
+  order: 1;
+}
+
+
 .head__menu{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  order: 2;
+  margin-left: 0px;
     & .menu_navigation{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      order: 1;
         & .navigation-item{
           margin: 0 25px 0 0px;
           @include montserrat700;
@@ -27,6 +40,7 @@
         }
     }
 }
+
 .logo-main{
   @include lato700;
   text-transform: uppercase;
@@ -35,12 +49,13 @@
     color: #ffffff;
   }
 }
-.menu-button{
+.head__button{
   border-radius: 40px;
   color: #fff;
   background-color: #8D81AC;
   padding: 10px 20px;
   border: none;
+  order: 2;
   @include montserrat700;
     &:hover{
       background-color: #fff;
