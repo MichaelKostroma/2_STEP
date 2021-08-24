@@ -1,0 +1,32 @@
+$withPC : 1024px;
+$withPCmid: 880px;
+$withTablet : 768px;
+.content {
+  max-width: $withPC;
+  margin: 0 auto;
+  padding: 0 90px;
+  @media (max-width: $withPCmid) {
+    padding: 0 40px;
+  }
+  @media (max-width: $withTablet){
+    padding: 0 20px;
+  }
+}
+
+
+@mixin lato700{
+  font-family: "lato:ital";
+  font-weight: 700;
+}
+@mixin lato400{
+  font-family: "lato";
+  font-weight: 400;
+}
+@mixin montserrat400{
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+@mixin montserrat700{
+  font-family: "Montserrat";
+  font-weight: 700;
+}

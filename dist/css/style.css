@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .product-title {
   font-weight: bold;
   font-size: 54px;
@@ -66,4 +67,289 @@
   border-color: rgba(27, 31, 35, 0.15);
   text-decoration: none;
   color: #24292e;
+=======
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+
+700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Montserrat:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+body {
+  font-family: "lato";
+  font-weight: 400;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+.header {
+  margin-top: 30px;
+}
+
+.header__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.head__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 0px;
+}
+
+.head__menu .menu_navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.head__menu .menu_navigation .navigation-item {
+  margin: 0 25px 0 0px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #8D81AC;
+}
+
+.head__menu .menu_navigation .navigation-item:hover {
+  color: #ffffff;
+}
+
+.logo-main {
+  font-family: "lato:ital";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #8D81AC;
+}
+
+.logo-main:hover {
+  color: #ffffff;
+}
+
+.head__button {
+  border-radius: 40px;
+  color: #fff;
+  background-color: #8D81AC;
+  padding: 10px 20px;
+  border: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.head__button:hover {
+  background-color: #fff;
+  color: #8D81AC;
+}
+
+@media (max-width: 880px) {
+  .content {
+    padding: 0 40px;
+  }
+
+  .content {
+    padding: 0 40px;
+  }
+
+  .content {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .header {
+    background-color: rgba(39, 38, 42, 0.5);
+  }
+>>>>>>> 67dba3fb8dd3e943837a04516abdf2e78d2d6483
 }

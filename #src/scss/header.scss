@@ -1,0 +1,65 @@
+@import "templates";
+//body{
+//  background-image: url(../img/Logo1.png);
+//}
+.header{
+  margin-top: 30px;
+  @media (max-width:$withTablet) {
+    background-color: rgba(39, 38, 42, 0.5);
+  }
+}
+.header__head{
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+  //flex-wrap: wrap;
+}
+.head__logo{
+  order: 1;
+}
+
+
+.head__menu{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  order: 2;
+  margin-left: 0px;
+    & .menu_navigation{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      order: 1;
+        & .navigation-item{
+          margin: 0 25px 0 0px;
+          @include montserrat700;
+          color: #8D81AC;
+          &:hover{
+          color: #ffffff;
+        }
+        }
+    }
+}
+
+.logo-main{
+  @include lato700;
+  text-transform: uppercase;
+  color: #8D81AC;
+    &:hover{
+    color: #ffffff;
+  }
+}
+.head__button{
+  border-radius: 40px;
+  color: #fff;
+  background-color: #8D81AC;
+  padding: 10px 20px;
+  border: none;
+  order: 2;
+  @include montserrat700;
+    &:hover{
+      background-color: #fff;
+      color: #8D81AC;
+    }
+}
+
