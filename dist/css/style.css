@@ -139,9 +139,27 @@ a {
   text-decoration: none;
 }
 
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
 body {
   font-family: "lato";
   font-weight: 400;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 90px;
 }
 
 .header {
@@ -218,27 +236,17 @@ body {
   color: #8D81AC;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 880px) {
   .content {
-    max-width: 1020px;
-    margin: 0 auto;
+    padding: 0 40px;
   }
 
   .content {
-    max-width: 1020px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 778px) {
-  .content {
-    max-width: 728px;
-    margin: 0 auto;
+    padding: 0 40px;
   }
 
   .content {
-    max-width: 728px;
-    margin: 0 auto;
+    padding: 0 40px;
   }
 }
 

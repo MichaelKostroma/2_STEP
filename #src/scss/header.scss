@@ -1,6 +1,7 @@
+@import "templates";
 .header{
   margin-top: 30px;
-  @media (max-width:768px) {
+  @media (max-width:$withTablet) {
     background-color: rgba(39, 38, 42, 0.5);
   }
 }

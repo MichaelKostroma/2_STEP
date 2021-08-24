@@ -1,13 +1,16 @@
-.content{
-  @media (max-width: 1080px ) {
-    max-width: 1020px;
-    margin: 0 auto;
-  }
-  @media (max-width: 778px) {
-    max-width: 728px;
-    margin: 0 auto;
+$withPC : 1024px;
+$with: 880px;
+$withTablet : 768px;
+.content {
+  max-width: $withPC;
+  margin: 0 auto;
+  padding: 0 90px;
+  @media (max-width: 880px) {
+    padding: 0 40px;
   }
 }
+
+
 @mixin lato700{
   font-family: "lato:ital";
   font-weight: 700;
