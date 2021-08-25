@@ -1,14 +1,12 @@
-$withPC : 1024px;
-$withPCmid: 920px;
-$withTablet : 768px;
+$withPC : 1200px;
+//$withPCmid: 993px;
+$withTablet : 992px;
+$withPhone: 480px;
 .content {
   //width: 100%;
   margin: 0 auto;
   padding: 0 90px;
   max-width: $withPC;
-  @media (max-width: $withPCmid) {
-    padding: 0 40px;
-  }
   @media (max-width: $withTablet){
     padding: 0 20px;
   }
