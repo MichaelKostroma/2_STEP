@@ -140,9 +140,9 @@ a {
 }
 
 .content {
-  max-width: 1024px;
   margin: 0 auto;
   padding: 0 90px;
+  max-width: 1024px;
 }
 
 body {
@@ -151,15 +151,23 @@ body {
 }
 
 .content {
-  max-width: 1024px;
   margin: 0 auto;
   padding: 0 90px;
+  max-width: 1024px;
 }
 
 .content {
-  max-width: 1024px;
   margin: 0 auto;
   padding: 0 90px;
+  max-width: 1024px;
+}
+
+.header {
+  background-image: url(../img/bgiSection1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
 }
 
 .header {
@@ -170,15 +178,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__head .logo {
+  display: block;
+}
+
+.header__head .logo:hover {
+  content: url("../img/logoHeaderHover.png");
 }
 
 .head__logo {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 20px;
 }
 
 .head__menu {
@@ -251,6 +276,12 @@ body {
   color: #8D81AC;
 }
 
+.break {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
 .product-title {
   font-weight: bold;
   font-size: 54px;
@@ -321,7 +352,7 @@ body {
   color: #24292e;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 920px) {
   .content {
     padding: 0 40px;
   }
@@ -332,6 +363,10 @@ body {
 
   .content {
     padding: 0 40px;
+  }
+
+  .head__logo {
+    margin-left: 10px;
   }
 }
 
@@ -346,6 +381,25 @@ body {
 
   .content {
     padding: 0 20px;
+  }
+
+  .break {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 0px;
+  }
+
+  .head__menu {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    margin: 20px auto;
+  }
+
+  .header__head {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #27262A;
   }
 
   .header {
