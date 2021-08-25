@@ -21,7 +21,6 @@
   .header__head{
     flex-wrap: wrap;
     background-color:#27262A ;
-    background-color: rgba(39, 38, 42, 0.5);
     padding-top: 25px;
   }
   .header{
@@ -70,7 +69,8 @@
       align-items: center;
       order: 1;
         & .navigation-item{
-          margin: 0 25px 0 0px;
+          text-align: center;
+          padding: 0 12px 0 12px;
           @include montserrat700;
           color: #8D81AC;
           &:hover{
@@ -103,4 +103,82 @@
 }
 .break{
   order: 4;
+}
+.head__button_burger{
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40px;
+  order: 3;
+  width: 25px;
+  & span{
+    display:inline-block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+}
+@keyframes burger_up {
+  0% {
+    width: 25px;
+     }
+  50%{
+    width: 0;
+  }
+  100% {
+    width: 25px;
+    transform: rotate(45deg) translate(3px, 14.5px);
+  }
+}
+@keyframes burger_down{
+  0% {
+    width: 25px;
+     }
+  50%{
+    width: 0;
+  }
+  100% {
+    width: 25px;
+    transform: rotate(-45deg) translate(0, -12.5px);
+  }
+}
+.burger_active {
+  &:hover > .burger_up {
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-name: burger_up;
+    transition: 0.5s;
+
+  }
+  &:hover > .burger_mid {
+    transition: 200ms;
+    width: 0;
+  }
+  &:hover > .burger_down {
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-name: burger_down;
+    transition: 0.5s;
+  }
+}
+@media (max-width: $withPhone) {
+  .head__menu{
+    display: none;
+  }
+  .head__button_burger{
+    display: flex;
+  }
+  .header__head{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .head__logo{
+    display: none;
+  }
+
 }

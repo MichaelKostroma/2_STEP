@@ -5,10 +5,12 @@ $withPhone: 480px;
 .content {
   //width: 100%;
   margin: 0 auto;
-  padding: 0 90px;
+  padding-left: 90px;
+  padding-right: 90px;
   max-width: $withPC;
   @media (max-width: $withTablet){
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
