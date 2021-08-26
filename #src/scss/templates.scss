@@ -12,6 +12,13 @@ $withPhone: 480px;
     padding-left: 20px;
     padding-right: 20px;
   }
+  @media (max-width: $withPhone) {
+    padding-left: 10px;
+    padding-right: 10px;
+    body{
+      min-width: $withPhone+10px;
+    }
+  }
 }
 
 
