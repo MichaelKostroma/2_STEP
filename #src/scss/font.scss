@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Montserrat:wght@400;700&display=swap');
 @import "templates";
+@mixin lato700{
+  font-family: "lato:ital";
+  font-weight: 700;
+}
+@mixin lato400{
+  font-family: "lato";
+  font-weight: 400;
+}
+@mixin montserrat400{
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+@mixin montserrat700{
+  font-family: "Montserrat";
+  font-weight: 700;
+}
 body{
   @include lato400;
 }

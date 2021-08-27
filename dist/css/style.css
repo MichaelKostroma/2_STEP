@@ -171,6 +171,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 700px;
+  min-width: 285px;
 }
 
 .header__head {
@@ -378,39 +379,95 @@ body {
   }
 }
 
-.burger_active:hover > .burger_up {
+.burger_active > .burger_up {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-name: burger_up;
           animation-name: burger_up;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.burger_active:hover > .burger_mid {
-  -webkit-transition: 200ms;
-  -o-transition: 200ms;
-  transition: 200ms;
+.burger_active > .burger_mid {
+  -webkit-transition: 0.3ms;
+  -o-transition: 0.3ms;
+  transition: 0.3ms;
   width: 0;
 }
 
-.burger_active:hover > .burger_down {
+.burger_active > .burger_down {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-name: burger_down;
           animation-name: burger_down;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.head__items_active {
+  left: 10px;
+}
+
+.header__body > p {
+  text-align: center;
+}
+
+.header__body_title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 82px;
+  color: #ffffff;
+  margin-top: 125px;
+}
+
+.header__body_subtitle {
+  font-family: "lato";
+  font-weight: 400;
+  color: #8D81AC;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.header__body_version {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #848E97;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.header__footer {
+  max-width: 390px;
+  height: 60px;
+  border-radius: 40px;
+  background-color: #8D81AC;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+}
+
+.header__footer > p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .content {
@@ -654,6 +711,10 @@ body {
   }
 
   .head__menu .menu_navigation {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    left: 600px;
     margin-top: 30px;
     position: absolute;
     display: -webkit-box;
@@ -671,6 +732,8 @@ body {
   }
 
   .head__menu .menu_navigation .navigation-item {
+    font-family: "Montserrat";
+    font-weight: 400;
     background-color: #333333;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -683,10 +746,24 @@ body {
     padding-left: 35px;
     max-width: 460px;
     height: 90px;
-    font-family: "Montserrat";
-    font-weight: 700;
     color: #ffffff;
     width: 100%;
+    position: relative;
+  }
+
+  .head__menu .menu_navigation .navigation-item:hover {
+    color: #8D81AC;
+  }
+
+  .head__menu .menu_navigation .navigation-item:hover::before {
+    content: "";
+    width: 8px;
+    height: 60%;
+    background-color: #8D81AC;
+    position: absolute;
+    -webkit-transform: translateX(-35px);
+        -ms-transform: translateX(-35px);
+            transform: translateX(-35px);
   }
 
   .content {

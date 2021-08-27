@@ -1,13 +1,11 @@
 @import "templates";
-//body{
-//  background-image: url(../img/Logo1.png);
-//}
 .header{
   background-image: url(../img/bgiSection1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: 700px;
+  min-width: 285px;
 }
 @media (max-width: $withTablet) {
   .break{
@@ -55,8 +53,6 @@
     font-size: 24px;
   }
 }
-
-
 .head__menu{
   display: flex;
   justify-content: space-between;
@@ -79,7 +75,6 @@
         }
     }
 }
-
 .logo-main{
   @include lato700;
   text-transform: uppercase;
@@ -146,25 +141,28 @@
   }
 }
 .burger_active {
-  &:hover > .burger_up {
+  & > .burger_up {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-name: burger_up;
-    transition: 0.5s;
+    transition: 0.3s;
 
   }
-  &:hover > .burger_mid {
-    transition: 200ms;
+  &> .burger_mid {
+    transition: 0.3ms;
     width: 0;
   }
-  &:hover > .burger_down {
+  &> .burger_down {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-name: burger_down;
-    transition: 0.5s;
+    transition: 0.3s;
   }
+}
+.head__items_active{
+  left: 10px;
 }
 @media (max-width: $withPhone) {
   .head__button_burger{
@@ -179,11 +177,12 @@
 
 
   .head__menu{
-    //top: 0;
     width: 100%;
     margin: 0 auto;
-
     & .menu_navigation{
+      transition: 0.5s;
+      //top: -500px;
+      left: 600px;
       margin-top: 30px;
       position: absolute;
       display: flex;
@@ -191,7 +190,8 @@
       margin-right: 10px;
       flex-direction: column;
       align-items: flex-start;
-      & .navigation-item{
+      & .navigation-item {
+        @include montserrat400;
         background-color: #333333;
         display: flex;
         align-items: center;
@@ -200,11 +200,58 @@
         padding-left: 35px;
         max-width: 460px;
         height: 90px;
-        @include montserrat700;
         color: #ffffff;
         width: 100%;
+        position: relative;
+        &:hover{
+          color: #8D81AC;
+          &::before{
+            content: '';
+            width: 8px;
+            height: 60%;
+            background-color: #8D81AC;
+            position: absolute;
+            transform: translateX(-35px);
+          }
+        }
       }
     }
   }
+}
+.header__body>p{
+  text-align: center;
+}
 
+.header__body_title{
+  @include montserrat700;
+  font-size: 82px;
+  color: #ffffff;
+  margin-top: 125px;
+}
+.header__body_subtitle{
+  @include lato400;
+  color: #8D81AC;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.header__body_version{
+  @include montserrat400;
+  color: #848E97;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.header__footer{
+  max-width: 390px;
+  height: 60px;
+  border-radius: 40px;
+  background-color: #8D81AC;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+    & > p{
+    @include montserrat700;
+      color: #ffffff;
+    }
 }
