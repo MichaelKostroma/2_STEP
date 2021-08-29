@@ -277,16 +277,16 @@ body {
   color: #8D81AC;
 }
 
-<<<<<<< HEAD
 .break {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
-=======
+}
+
 .content {
-  max-width: 1024px;
   margin: 0 auto;
   padding: 0 90px;
+  max-width: 1200px;
 }
 
 .product-editor {
@@ -299,7 +299,6 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
->>>>>>> msection1
 }
 
 .product-title {
@@ -438,14 +437,6 @@ body {
   .content {
     padding: 0 20px;
   }
-<<<<<<< HEAD
-=======
-
-  .content {
-    padding: 0 40px;
-  }
-}
->>>>>>> msection1
 
   .break {
     -ms-flex-preferred-size: 100%;
