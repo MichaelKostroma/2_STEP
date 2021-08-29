@@ -1,31 +1,30 @@
-$withPC : 1200px;
+$withPC: 1200px;
 //$withPCmid: 993px;
-$withTablet : 992px;
+$withTablet: 992px;
 $withPhone: 480px;
 .content {
   //width: 100%;
   margin: 0 auto;
   padding: 0 90px;
   max-width: $withPC;
-  @media (max-width: $withTablet){
+  @media (max-width: $withTablet) {
     padding: 0 20px;
   }
 }
 
-
-@mixin lato700{
+@mixin lato700 {
   font-family: "lato:ital";
   font-weight: 700;
 }
-@mixin lato400{
+@mixin lato400 {
   font-family: "lato";
   font-weight: 400;
 }
-@mixin montserrat400{
+@mixin montserrat400 {
   font-family: "Montserrat";
   font-weight: 400;
 }
-@mixin montserrat700{
+@mixin montserrat700 {
   font-family: "Montserrat";
   font-weight: 700;
 }
