@@ -156,19 +156,13 @@ body {
   max-width: 1200px;
 }
 
-.content {
-  margin: 0 auto;
-  padding: 0 90px;
-  max-width: 1200px;
-}
-
 .header {
   background-image: url(../img/bgiSection1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 700px;
+  height: 800px;
   position: relative;
 }
 
@@ -556,6 +550,28 @@ body {
   max-width: 700px;
 }
 
+.peopleTalking {
+  background-image: url(../img/bgi3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+}
+
+.container {
+  height: 100%;
+}
+
+.peopleTalking__title {
+  padding-top: 110px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+
 @media (min-width: 1230px) {
   .product-info {
     -webkit-box-pack: center;
@@ -565,10 +581,6 @@ body {
 }
 
 @media (max-width: 992px) {
-  .content {
-    padding: 0 20px;
-  }
-
   .content {
     padding: 0 20px;
   }
@@ -673,6 +685,10 @@ body {
     background-image: url(../img/HelloFork_tablet.png);
     margin-left: 68px;
   }
+
+  .peopleTalking__title {
+    color: red;
+  }
 }
 
 @media (max-width: 579px) {
@@ -690,8 +706,8 @@ body {
     padding: 0 15px;
   }
 
-  .content {
-    padding: 0 15px;
+  .header {
+    height: 720px;
   }
 
   .head__menu {

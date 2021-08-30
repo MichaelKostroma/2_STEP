@@ -1,4 +1,3 @@
-@import "templates";
 //body{
 //  background-image: url(../img/Logo1.png);
 //}
@@ -9,8 +8,11 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 700px;
+  height: 800px;
   position: relative;
+  @media (max-width: $withPhone) {
+    height: 720px;
+  }
 }
 .burger{
   //display: none;
