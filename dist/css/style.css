@@ -169,6 +169,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 700px;
+  position: relative;
 }
 
 .header__head {
@@ -320,6 +321,69 @@ body {
 
 .burger_active span {
   display: none;
+}
+
+.header__body {
+  margin-top: 125px;
+}
+
+.header__body p {
+  margin-bottom: 20px;
+}
+
+.header__body_title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 82px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header__body_subtitle {
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 30px;
+  color: #8D81AC;
+  text-align: center;
+}
+
+.header__body_version {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #848E97;
+  text-align: center;
+}
+
+.header__download {
+  position: absolute;
+  bottom: 0;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: #8D81AC;
+  border-radius: 40px;
+  border: #8D81AC 1px solid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header__download:hover {
+  background-color: white;
+}
+
+.header__download .header__download_content {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: white;
+  font-size: 21px;
+  padding: 25px 60px;
+}
+
+.header__download .header__download_content:hover {
+  color: #8D81AC;
 }
 
 .product-editor {
@@ -542,6 +606,28 @@ body {
     background-color: rgba(39, 38, 42, 0.5);
   }
 
+  .header__body {
+    margin-top: 70px;
+  }
+
+  .header__body_title {
+    font-size: 72px;
+  }
+
+  .header__body_subtitle {
+    font-size: 24px;
+  }
+
+  .header__body_version {
+    font-size: 14px;
+  }
+
+  .header__download .header__download_content {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 0;
+  }
+
   .git-stuff {
     margin-top: 24px;
   }
@@ -586,6 +672,12 @@ body {
     display: block;
     background-image: url(../img/HelloFork_tablet.png);
     margin-left: 68px;
+  }
+}
+
+@media (max-width: 579px) {
+  .header__download {
+    width: 60%;
   }
 }
 
@@ -702,6 +794,22 @@ body {
 
   .logo {
     padding: 0;
+  }
+
+  .header__body {
+    margin-top: 50px;
+  }
+
+  .header__body_title {
+    font-size: 48px;
+  }
+
+  .header__body_subtitle {
+    font-size: 18px;
+  }
+
+  .header__download {
+    width: 90%;
   }
 
   .product-title {
