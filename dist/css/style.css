@@ -572,6 +572,22 @@ body {
   color: white;
 }
 
+.peopleTalking__partners {
+  margin-top: 80px;
+  display: grid;
+}
+
+.peopleTalking__partners .peopleTalking__partners_company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  max-width: 345px;
+}
+
 @media (min-width: 1230px) {
   .product-info {
     -webkit-box-pack: center;

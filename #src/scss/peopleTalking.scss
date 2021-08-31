@@ -19,3 +19,14 @@
     color: red;
   }
 }
+
+.peopleTalking__partners{
+  margin-top: 80px;
+  display: grid;
+
+    & .peopleTalking__partners_company{
+      display: flex;
+      flex-direction: column-reverse;
+      max-width: 345px;
+    }
+}
