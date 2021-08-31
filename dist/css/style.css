@@ -453,11 +453,254 @@ body {
   max-width: 700px;
 }
 
+.footer-section {
+  background-image: url(../img/bcfooter.png);
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding-top: 112px;
+  margin-bottom: 60px;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: 257px 257px 300px 257px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  padding-bottom: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing__item {
+  width: 257px;
+  background-color: rgba(255, 255, 255, 0.06);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 490px;
+}
+
+.pricing__item--active {
+  width: 300px;
+  background: #463048;
+  opacity: 0.84;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 590px;
+}
+
+.pricing__item--pack {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.06);
+  width: 257px;
+  padding: 36px 0;
+  margin-bottom: 30px;
+}
+
+.pricing__item--pack--active {
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 43px 0;
+  margin-bottom: 15px;
+  margin: 0 auto;
+}
+
+.pricing__item--value {
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.pricing__item--value--active {
+  font-size: 82px;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-top: 14px;
+}
+
+.pricing__item--dollar {
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.pricing__item--dollar--active {
+  font-size: 82px;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.pricing__item--terms {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.pricing__item--terms--active {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.pricing__item--terms--active::after {
+  content: "";
+  width: 60px;
+  border-bottom: 5px solid #8d81ac;
+  display: block;
+  padding-top: 38px;
+  margin: 0 auto;
+}
+
+.pricing__item--terms::after {
+  content: "";
+  width: 60px;
+  border-bottom: 5px solid #8d81ac;
+  display: block;
+  padding-top: 38px;
+  margin: 0 auto;
+}
+
+.pricing__item--info {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 48px;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.pricing__item--info--first {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 65px;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.pricing__item--info--active {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding-top: 40px;
+  width: 210px;
+  margin: 0 auto;
+  padding-bottom: 128px;
+}
+
+.pricing__item--btn {
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding: 15px 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 40px;
+  width: 163px;
+  margin: 0 auto 37px auto;
+}
+
+.pricing__item--btn--active {
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding: 18px 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 40px;
+  width: 190px;
+  margin: 0 auto 47px auto;
+}
+
 @media (min-width: 1230px) {
   .product-info {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 1160px) {
+  .pricing {
+    grid-template-columns: 257px 257px 300px;
   }
 }
 
@@ -548,6 +791,64 @@ body {
     background-image: url(../img/HelloFork_tablet.png);
     margin-left: 68px;
   }
+
+  .footer-section {
+    min-width: 650px;
+  }
+
+  .footer-title {
+    font-size: 42px;
+    line-height: 44px;
+    padding-top: 88px;
+    margin-bottom: 39px;
+  }
+
+  .pricing {
+    grid-template-columns: 300px 257px;
+    width: 582px;
+    margin: 0 auto;
+    row-gap: 30px;
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    justify-items: end;
+  }
+
+  .pricing__item {
+    height: 460px;
+  }
+
+  .pricing__item--active {
+    height: 560px;
+  }
+
+  .pricing__item--value {
+    line-height: 62px;
+  }
+
+  .pricing__item--value--active {
+    line-height: 84px;
+  }
+
+  .pricing__item--dollar {
+    line-height: 62px;
+  }
+
+  .pricing__item--dollar--active {
+    line-height: 84px;
+  }
+
+  .pricing__item--info {
+    padding-bottom: 36px;
+  }
+
+  .pricing__item--info--first {
+    padding-bottom: 54px;
+  }
+
+  .pricing__item--info--active {
+    padding-bottom: 83px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -618,5 +919,29 @@ body {
     max-width: 317px;
     margin: 0;
     background-size: contain;
+  }
+
+  .footer-section {
+    min-width: 320px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+    line-height: 42px;
+    padding-top: 14px;
+    margin-bottom: 32px;
+  }
+
+  .pricing {
+    grid-template-columns: 300px;
+    width: 300px;
+    margin: 0 auto;
+    row-gap: 18px;
+    padding-bottom: 18px;
+    justify-items: center;
+  }
+
+  .pricing__item--info--first {
+    padding-bottom: 37px;
   }
 }
