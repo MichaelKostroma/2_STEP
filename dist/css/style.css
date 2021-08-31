@@ -386,12 +386,6 @@ body {
   color: #8D81AC;
 }
 
-.content {
-  margin: 0 auto;
-  padding: 0 90px;
-  max-width: 1200px;
-}
-
 .product-editor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +396,14 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product-title {
@@ -422,13 +424,14 @@ body {
   margin: 0 auto;
   text-align: center;
   color: #323232;
-  width: 860px;
   margin-top: 35px;
 }
 
 .git-stuff {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 365px;
   -webkit-column-gap: 7px;
      -moz-column-gap: 7px;
           column-gap: 7px;
@@ -436,11 +439,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 13px;
-}
-
-.git-stuff__widget {
-  display: inline-block;
-  overflow: hidden;
 }
 
 .widget__btn:not(:last-child) {
@@ -479,7 +477,7 @@ body {
 .product-section {
   background-color: #f4f4f4;
   padding-bottom: 72px;
-  padding-left: 10px;
+  margin: 0 auto;
 }
 
 .product-info {
@@ -489,12 +487,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 100px;
+  padding: 100px 0 0 30px;
 }
 
 .product-info__item {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 130px minmax(300px, 400px);
   padding-bottom: 35px;
 }
 
@@ -519,13 +517,43 @@ body {
 .slogan__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 47px;
   line-height: 50px;
   margin-left: 22px;
   color: #8d81ac;
   padding-bottom: 40px;
+  text-align: center;
   font-family: "Montserrat";
   font-weight: 700;
+}
+
+.slogan__title--smart {
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #8d81ac;
+}
+
+.slogan__img {
+  background-image: url(../img/HelloFork.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 520px;
+  width: 100%;
+}
+
+.slogan__img--tablet {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  height: 520px;
+  width: 100%;
+  max-width: 700px;
 }
 
 .footer-section {
@@ -765,6 +793,14 @@ body {
   margin: 0 auto 47px auto;
 }
 
+@media (min-width: 1230px) {
+  .product-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 1160px) {
   .pricing {
     grid-template-columns: 257px 257px 300px;
@@ -835,8 +871,50 @@ body {
     margin: 0;
   }
 
-  .content {
-    padding: 0 20px;
+  .git-stuff {
+    margin-top: 24px;
+  }
+
+  .product-section {
+    background-color: #fff;
+  }
+
+  .product-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0;
+  }
+
+  .product-info__list {
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .product-info__item {
+    grid-template-columns: 130px minmax(100px, 1fr);
+  }
+
+  .product-slogan {
+    display: none;
+  }
+
+  .slogan__title--smart {
+    display: block;
+    padding-bottom: 50px;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .slogan__img--tablet {
+    display: block;
+    background-image: url(../img/HelloFork_tablet.png);
+    margin-left: 68px;
   }
 
   .footer-section {
@@ -1035,8 +1113,73 @@ body {
     width: 90%;
   }
 
-  .content {
-    padding: 0 15px;
+  .product-title {
+    font-size: 26px;
+    line-height: 28px;
+    margin-top: 79px;
+  }
+
+  .product-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 27px;
+  }
+
+  .git-stuff {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 251px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 36px;
+  }
+
+  .widget__btn,
+  .widget__count {
+    margin-bottom: 20px;
+  }
+
+  .product-info__list {
+    padding-bottom: 30px;
+  }
+
+  .product-info__item {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-right: 0;
+  }
+
+  .product-info__item--prodben {
+    padding-bottom: 23px;
+  }
+
+  .product-info__description .description__title {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .product-info__description .description__title {
+    padding-bottom: 14px;
+  }
+
+  .product-info__description .description__subtitle {
+    text-align: center;
+  }
+
+  .slogan__title--smart {
+    font-size: 32px;
+    line-height: 38px;
+    padding-top: 100px;
+    padding-bottom: 36px;
+  }
+
+  .slogan__img--tablet {
+    background-image: url(../img/HelloFork_phone.png);
+    max-width: 317px;
+    margin: 0;
+    background-size: contain;
   }
 
   .footer-section {
