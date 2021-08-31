@@ -10,6 +10,9 @@ $withPhone: 480px;
   @media (max-width: $withTablet) {
     padding: 0 20px;
   }
+    @media (max-width: $withPhone) {
+      padding: 0 15px;
+    }
 }
 
 @mixin lato700 {
