@@ -556,7 +556,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 800px;
 }
 
 .container {
@@ -575,17 +574,40 @@ body {
 .peopleTalking__partners {
   margin-top: 80px;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 90px;
+  grid-row-gap: 115px;
 }
 
 .peopleTalking__partners .peopleTalking__partners_company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   max-width: 345px;
+}
+
+.peopleTalking__partners .peopleTalking__partners_company img {
+  margin-bottom: 30px;
+}
+
+.peopleTalking__partners .peopleTalking__partners_company p {
+  text-align: center;
+  line-height: 24px;
+  font-family: "lato:ital";
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.peopleTalking__footer {
+  margin: 120px auto 20px auto;
 }
 
 @media (min-width: 1230px) {
