@@ -550,7 +550,100 @@ body {
   max-width: 700px;
 }
 
-<<<<<<< HEAD
+.peopleTalking {
+  background-image: url(../img/bgi3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.peopleTalking__title {
+  padding-top: 110px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+
+.peopleTalking__partners {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: start;
+  grid-column-gap: 90px;
+  grid-row-gap: 115px;
+}
+
+.peopleTalking__partners .peopleTalking__partners_company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 345px;
+}
+
+.peopleTalking__partners .peopleTalking__partners_company img {
+  margin-bottom: 30px;
+}
+
+.peopleTalking__partners .peopleTalking__partners_company p {
+  text-align: center;
+  line-height: 24px;
+  font-family: "lato:ital";
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.peopleTalking__footer {
+  margin: 120px auto 20px auto;
+  max-width: 890px;
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+}
+
+.peopleTalking__footer p {
+  padding-bottom: 20px;
+  font-family: "lato";
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 14px;
+  color: #A291A5;
+}
+
+.peopleTalking__footer p::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  max-width: 780px;
+  height: 1px;
+  border: 1px solid #645766;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background-color: #645766;
+}
+
 .footer-section {
   background-image: url(../img/bcfooter.png);
 }
@@ -786,100 +879,6 @@ body {
   border-radius: 40px;
   width: 190px;
   margin: 0 auto 47px auto;
-=======
-.peopleTalking {
-  background-image: url(../img/bgi3.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
-.container {
-  height: 100%;
-}
-
-.peopleTalking__title {
-  padding-top: 110px;
-  text-align: center;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 48px;
-  color: white;
-}
-
-.peopleTalking__partners {
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-self: start;
-  grid-column-gap: 90px;
-  grid-row-gap: 115px;
-}
-
-.peopleTalking__partners .peopleTalking__partners_company {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  max-width: 345px;
-}
-
-.peopleTalking__partners .peopleTalking__partners_company img {
-  margin-bottom: 30px;
-}
-
-.peopleTalking__partners .peopleTalking__partners_company p {
-  text-align: center;
-  line-height: 24px;
-  font-family: "lato:ital";
-  font-weight: 700;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.peopleTalking__footer {
-  margin: 120px auto 20px auto;
-  max-width: 890px;
-  font-family: "lato";
-  font-weight: 400;
-  font-size: 14px;
-  position: relative;
-  text-align: center;
-}
-
-.peopleTalking__footer p {
-  padding-bottom: 20px;
-  font-family: "lato";
-  font-weight: 400;
-  line-height: 21px;
-  font-size: 14px;
-  color: #A291A5;
-}
-
-.peopleTalking__footer p::before {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  max-width: 780px;
-  height: 1px;
-  border: 1px solid #645766;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 0;
-  background-color: #645766;
->>>>>>> vsection2
 }
 
 @media (min-width: 1230px) {
@@ -1002,7 +1001,10 @@ body {
     margin-left: 68px;
   }
 
-<<<<<<< HEAD
+  .peopleTalking__title {
+    color: red;
+  }
+
   .footer-section {
     min-width: 650px;
   }
@@ -1059,10 +1061,6 @@ body {
 
   .pricing__item--info--active {
     padding-bottom: 83px;
-=======
-  .peopleTalking__title {
-    color: red;
->>>>>>> vsection2
   }
 }
 
