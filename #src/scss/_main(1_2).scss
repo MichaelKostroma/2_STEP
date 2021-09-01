@@ -7,6 +7,22 @@
   align-items: center;
 }
 
+.product-trial-period {
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 66px;
+  padding-top: 48px;
+  color: #848e97;
+  @include montserrat400;
+
+  @media (max-width: $withTablet) {
+    margin-bottom: 93px;
+  }
+  @media (max-width: $withTablet) {
+    margin-bottom: 79px;
+  }
+}
+
 .product-title {
   font-weight: bold;
   font-size: 54px;
@@ -14,13 +30,11 @@
   text-align: center;
   text-transform: uppercase;
   color: #635c73;
-  margin-top: 66px;
   @include montserrat700;
 
   @media (max-width: $withPhone) {
     font-size: 26px;
     line-height: 28px;
-    margin-top: 79px;
   }
 }
 

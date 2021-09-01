@@ -6,21 +6,22 @@
   width: 100%;
   //height: 800px;
 }
-.container{
+.container {
   height: 100%;
 }
-.peopleTalking__title{
+.peopleTalking__title {
   padding-top: 110px;
   text-align: center;
   @include montserrat700;
   font-size: 48px;
   color: white;
   @media (max-width: $withTablet) {
-    color: red;
+    font-size: 42px;
+    line-height: 44px;
   }
 }
 
-.peopleTalking__partners{
+.peopleTalking__partners {
   margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -28,50 +29,69 @@
   grid-column-gap: 90px;
   grid-row-gap: 115px;
 
-    & .peopleTalking__partners_company{
-      display: flex;
-      align-items: center;
-      flex-direction: column-reverse;
-      justify-content: flex-end;
-      max-width: 345px;
-      //margin-bottom: 116px;
-        & img {
-          margin-bottom: 30px;
-        }
-        & p{
-          text-align: center;
-          line-height: 24px;
-          @include lato700;
-          font-size: 16px;
-          color: #ffffff;
-        }
+  @media (max-width: $withTablet) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 63px;
+    grid-row-gap: 56px;
+  }
+  @media (max-width: $withPhone) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 45px;
+    justify-items: center;
+  }
+
+  & .peopleTalking__partners_company {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    max-width: 345px;
+
+    & img {
+      margin-bottom: 30px;
     }
+    & p {
+      text-align: center;
+      line-height: 24px;
+      @include lato700;
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
 }
-.peopleTalking__footer{
-  margin: 120px auto 20px auto;
+.peopleTalking__footer {
+  margin: 120px auto -12px auto;
   max-width: 890px;
   @include lato400;
   font-size: 14px;
   position: relative;
   text-align: center;
-    & p {
-      padding-bottom: 20px;
-      @include lato400;
-      line-height: 21px;
-      font-size: 14px;
-      color: #A291A5;
-      &::before {
-        content: ' ';
-        position: absolute;
-        width: 100%;
-        max-width: 780px;
-        height: 1px;
-        border: 1px solid #645766;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        background-color: #645766;
-      }
-    }
 
+  @media (max-width: $withTablet) {
+    margin-top: 68px;
+  }
+
+  @media (max-width: $withPhone) {
+    margin-top: 37px;
+  }
+
+  & p {
+    padding-bottom: 22px;
+    @include lato400;
+    line-height: 21px;
+    font-size: 14px;
+    color: #a291a5;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      max-width: 780px;
+      height: 1px;
+      border: 1px solid #645766;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      background-color: #645766;
+    }
+  }
 }
